@@ -1,0 +1,148 @@
+1️⃣ main.ts
+
+Idhu project-oda entry point.
+
+Computer project start pannumbodhu first execute aagura file idhu.
+
+Simple flow:
+
+User
+   ↓
+main.ts
+   ↓
+AppModule
+   ↓
+Application Starts
+
+Presentation-la solla vendiyadhu:
+
+"main.ts is the entry point of the NestJS application. It bootstraps the application and starts the server on port 3000."
+
+2️⃣ app.module.ts
+
+Idhu project-oda main module.
+
+Ella modules-um inga register pannuvom.
+
+Future-la:
+
+Auth Module
+User Module
+Billing Module
+Subscription Module
+
+ellam inga add pannuvom.
+
+Think of it as the brain that connects all modules.
+
+3️⃣ app.controller.ts
+
+Controller requests receive pannum.
+
+Example:
+
+Browser:
+
+http://localhost:3000
+
+↓
+
+Request controller-ku pogum.
+
+↓
+
+Controller service-a call pannum.
+
+↓
+
+Response browser-ku anuppum.
+
+4️⃣ app.service.ts
+
+Business Logic inga irukkum.
+
+Example:
+
+Calculate bill
+Create invoice
+Verify subscription
+
+Controller direct-a calculation pannadhu.
+
+Service use pannum.
+
+Overall Flow
+Browser
+   │
+   ▼
+Controller
+   │
+   ▼
+Service
+   │
+   ▼
+Database
+
+Idhu dhaan almost ella NestJS project-um follow panra architecture.
+
+🎯 Next Step (Tomorrow / Next Session)
+
+Ippo namma PostgreSQL-a NestJS-oda connect pannuvom.
+
+Appo:
+
+billing_db database create pannuvom.
+Database connection setup pannuvom.
+First table (users) create pannuvom.
+🎓 Internship Presentation Tip
+
+Indha architecture-a explain panna interviewer impress aaguvanga:
+
+User
+   ↓
+Frontend (Next.js)
+   ↓
+REST API
+   ↓
+NestJS Controller
+   ↓
+NestJS Service
+   ↓
+PostgreSQL Database
+📌 Namma Plan
+✅ Setup (Completed)
+✅ Backend Running (Completed)
+➜ Connect PostgreSQL
+➜ Create Database
+➜ Design Tables
+➜ Authentication (JWT)
+➜ Multi-Tenant Module
+➜ Subscription Module
+➜ Billing Module
+➜ Invoice Module
+➜ Next.js Frontend
+➜ Final PPT + Viva Preparation
+
+Inime namma oru command kooda meaning puriyama use panna maatom. Naan mentor madhiri explain pannitu project build pannuvom. By the end, unakku project run pannavum, explain pannavum, presentation pannavum confidence irukkum. 💪🚀
+
+
+
+
+We are building a NestJS + PostgreSQL Billing Backend.
+
+Completed:
+- PostgreSQL setup
+- TypeORM configuration
+- Users CRUD
+- Password hashing using bcrypt
+- JWT authentication
+- Login API returning access_token
+- AuthModule configured with JwtModule
+
+Current status:
+Backend running successfully.
+Next task: Complete Customers module, then Products, Invoices, Payments, and finally JWT Guards.
+
+Please continue from Customers module without repeating previous setup.
+
+Idha next chat-la paste pannina, namma almost same place-la irundhu continue pannalaam.
