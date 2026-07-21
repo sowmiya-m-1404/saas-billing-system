@@ -26,6 +26,12 @@ import { DashboardModule } from './dashboard/dashboard.module';
       database: process.env.DB_NAME,
       autoLoadEntities: true,
       synchronize: true,
+      ssl: true,
+      extra: {
+        ssl: {
+          rejectUnauthorized: false,
+       },
+     },
     }),
 
     AuthModule,
